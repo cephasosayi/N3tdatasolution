@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   background: rgb(2, 0, 36);
-  background: #0173E1;
+  /*background: #0173E1;*/
   
 }
 
@@ -26,7 +26,7 @@ body {
   background-color: #fff;
   border-radius: 5px;
   width: 25em;
-  height: 40em;
+  height: 30em;
 }
 
 .items {
@@ -57,8 +57,8 @@ body {
 }
 
 #button {
-  padding: 20px 30px;
-  margin-top: 30px;
+  padding: 5px 10px;
+  margin-top: 20px;
   outline: none;
   border: none;
   font-size: medium;
