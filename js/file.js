@@ -1,30 +1,3 @@
-// // number count for stats, using jQuery animate
-
-// $('.counting').each(function() {
-//   var $this = $(this),
-//       countTo = $this.attr('data-count');
-  
-//   $({ countNum: $this.text()}).animate({
-//     countNum: countTo
-//   },
-
-//   {
-
-//     duration: 3000,
-//     easing:'linear',
-//     step: function() {
-//       $this.text(Math.floor(this.countNum));
-//     },
-//     complete: function() {
-//       $this.text(this.countNum);
-//       //alert('finished');
-//     }
-
-//   });  
-  
-
-// });
-
 
   $.fn.jQuerySimpleCounter = function( options ) {
       var settings = $.extend({
@@ -63,3 +36,22 @@ $('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
             $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
         });
   
+
+  // login/signup
+  function toggleSignup(){
+   document.getElementById("login-toggle").style.backgroundColor="#fff";
+    document.getElementById("login-toggle").style.color="#222";
+    document.getElementById("signup-toggle").style.backgroundColor="#57b846";
+    document.getElementById("signup-toggle").style.color="#fff";
+    document.getElementById("login-form").style.display="none";
+    document.getElementById("signup-form").style.display="block";
+}
+
+function toggleLogin(){
+    document.getElementById("login-toggle").style.backgroundColor="#57B846";
+    document.getElementById("login-toggle").style.color="#fff";
+    document.getElementById("signup-toggle").style.backgroundColor="#fff";
+    document.getElementById("signup-toggle").style.color="#222";
+    document.getElementById("signup-form").style.display="none";
+    document.getElementById("login-form").style.display="block";
+}

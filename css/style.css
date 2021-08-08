@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 .navbar-brand img{
-  width: 100px;
-  height: 60px;
-}
+margin-top:-50px; margin-bottom: -50px;}
 .navbar {
   padding: .8rem;
 }

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="img/logo2.png">
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login</title>
@@ -17,26 +19,79 @@
 	<link href="css/login.css" rel="stylesheet">
 	
 	</head>
+
+
+<!-- nav -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-fluid" width="150" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+            
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonials</a>
+                </li>
+                
+            </ul>
+            <div class="text-end">
+                <a href="login.html">
+          <button type="button" class="btn btn-outline-dark me-2">Login</button></a>
+          <a href="login.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+        </div>
+        </div>
+    </div>
+
+    </div>
+</nav>
+    <!-- forms -->
 <body class="bg-dark">
-<!-- login -->
-<div class="container text-dark">
-  
-  <div class="text-center">
-  <img src="img/logo.png" class="thumbnail img-fluid ">
+<div class="form-modal">
+    
+    <div class="form-toggle">
+        <button id="login-toggle"  onclick="toggleLogin()">log in</button>
+        <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+    </div>
+
+    <div id="login-form">
+        <form>
+            <input type="text" placeholder="Enter email or username"/>
+            <input type="password" placeholder="Enter password"/>
+            <button type="button" class="btn login">login</button>
+            <p><a href="javascript:void(0)">Forgotten account</a></p>
+            <hr/>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign in with google</button>
+            
+        </form>
+    </div>
+
+    <div id="signup-form">
+        <form>
+            <input type="email" placeholder="Enter your email"/>
+            <input type="text" placeholder="Choose username"/>
+            <input type="password" placeholder="Create password"/>
+            <button type="button" class="btn signup">create account</button>
+            <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+            <hr/>
+            <button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign up with google</button>
+           
+        </form>
+    </div>
+
 </div>
-<h4 id="title">Login</h4><br>
-  <div class="items">
-    <input type="text" id="form-text" placeholder="Username" required />
-    <input type="password" id="form-password" placeholder="Password" required/>
-    <div class="pass text-center">
-            <a href="#">Forgot Password?</a>
-          </div>
-    <button id="button">Login</button>
-    <p style="margin-top: 1em;" class="text-center">Don't have an account yet ?
-    <a id="sign" type="submit" href="register.html" >Sign Up</a>
-    </p>
-  </div>
-</div>
+
 
 </body>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
